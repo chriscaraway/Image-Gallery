@@ -1,0 +1,83 @@
+h1 {
+  font-family: "Cambria", serif;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Cambria", serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Cambria", serif;
+}
+
+h4 {
+  font-family: "Cambria", serif;
+}
+
+ul {
+  font-family: "Cambria", serif;
+}
+
+a {text-decoration: none;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFF
+}
+
+.doge {
+  width: 100%;
+  max-width: 1020px;
+  margin: auto;
+}
+
+.doge{
+  float: left;
+  width: 480px;
+  height: 340px;
+  margin: 20px;
+  border: 5px solid #red;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doge-image {
+  width: 480px;
+  height:340px;
+   margin: 20px;
+}
+
+
+.doge-image:nth-child(2n+1) {
+  background-image: url('https://c1.staticflickr.com/3/2926/32772167714_146449cfd5_z.jpg');
+}
+.doge-image:nth-child(2n+2) {
+  background-image: url('https://c1.staticflickr.com/4/3817/33458246282_f351977ede_z.jpg');
+}
+
+
+@media all and (max-width: 1020px){
+  .doge-image{
+    float: left;
+    margin: 10px auto;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .doge-image{
+    border: none;
+    width: 100vw;
+    height:100vw;
+  }
+}
